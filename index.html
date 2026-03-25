@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Brand Store</title>
+
+    <!-- Meta Pixel Code (已经填入你的 ID: 1284188020249848) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // 初始化像素
+    fbq('init', '1284188020249848');
+    
+    // 自动跟踪：浏览量 (PageView)
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=1284188020249848&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        /* 基础样式优化 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 600px; /* 针对手机端展示优化 */
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .image-section img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        
+        /* 按钮部分优化 */
+        .button-section {
+            padding: 25px 15px;
+            text-align: center;
+            background: #ffffff;
+        }
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s ease;
+            /* 呼吸灯动画：吸引用户点击 */
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+            background-color: #128C7E;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .icon { margin-right: 10px; font-size: 22px; }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #888;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 第一部分 -->
+        <section class="image-section">
+            <img src="1.jpg" alt="Luxury Item 1">
+        </section>
+        <section class="button-section">
+            <a href="https://wa.me/85256153983" target="_blank" class="whatsapp-button" onclick="fbq('track', 'Contact');">
+                <span class="icon">💬</span> WhatsApp Order Inquiry
+            </a>
+        </section>
+
+        <!-- 第二部分 -->
+        <section class="image-section">
+            <img src="2.jpg" alt="Luxury Item 2">
+        </section>
+        <section class="button-section">
+            <a href="https://wa.me/85256153983" target="_blank" class="whatsapp-button" onclick="fbq('track', 'Contact');">
+                <span class="icon">💬</span> Contact customer service to learn more
+            </a>
+        </section>
+
+        <!-- 第三部分至第八部分 (循环布局) -->
+        <section class="image-section"><img src="3.jpg" alt="Image 3"></section>
+        <section class="image-section"><img src="4.jpg" alt="Image 4"></section>
+        
+        <section class="button-section">
+            <a href="https://wa.me/85256153983" target="_blank" class="whatsapp-button" onclick="fbq('track', 'Contact');">
+                <span class="icon">💬</span> Inquire about the discounted price immediately
+            </a>
+        </section>
+
+        <section class="image-section"><img src="5.jpg" alt="Image 5"></section>
+        <section class="image-section"><img src="6.jpg" alt="Image 6"></section>
+        <section class="image-section"><img src="7.jpg" alt="Image 7"></section>
+        <section class="image-section"><img src="8.jpg" alt="Image 8"></section>
+
+        <!-- 底部固定联系按钮 -->
+        <section class="button-section">
+            <a href="https://wa.me/85256153983" target="_blank" class="whatsapp-button" onclick="fbq('track', 'Contact');">
+                <span class="icon">💬</span>24-hour online consultation
+            </a>
+        </section>
+
+        <div class="footer">
+            <p>© 2024 Luxury Brand Store | 专注高端奢品10年</p>
+        </div>
+    </div>
+
+</body>
+</html>
